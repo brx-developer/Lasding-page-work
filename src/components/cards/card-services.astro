@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  parrafo: string;
+}
+
+const { title, parrafo } = Astro.props;
+---
+
+<div
+  class="group relative -translate-y-20 rounded-bl-3xl rounded-tr-3xl bg-white py-10 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.3)] transition-all duration-300 hover:bg-secondary"
+>
+  <div class="px-10 py-7">
+    <button
+      class="text-letf gradient flex h-20 w-20 items-end justify-start rounded-tr-full bg-primary p-4 *:size-10 *:text-white"
+    >
+      <slot />
+    </button>
+    <h6
+      class="py-4 font-bold text-secondary transition-all duration-300 group-hover:text-white"
+    >
+      {title}
+    </h6>
+    <p class="pb-7 text-xs text-black group-hover:text-white">
+      {parrafo}
+    </p>
+  </div>
+  <div class="absolute -right-10 -top-10 size-60">
+    <img src="decoration/puntos.svg" alt="a" />
+  </div>
+</div>
