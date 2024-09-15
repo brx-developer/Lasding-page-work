@@ -16,36 +16,31 @@ export default {
   ],
   theme: {
     fontFamily: {
-      //Cambiar a mi gusto
       inter: ["Inter", ...defaultTheme.fontFamily.sans],
     },
     extend: {
-      screens: {
-        //Cambiar a mi gusto
-
-        dm: "450px",
-        fm: "575px",
-        mx: "900px",
-        mr: "1150px",
+      translate: {
+        4.5: "1.125rem",
       },
       colors: {
-        //Cambiar a mi gusto
         primary: {
-          DEFAULT: "#427150",
-          strong: "#31543B",
-          soft: "#60A674",
-          light: "#C3D9C9",
+          DEFAULT: "#f57b4e", // Color principal
+          light: "#ff8c5e", // Variante clara
+          dark: "#c44e2e", // Variante oscura
+          accent: "#ffa800", // Variante de acento
+          soft: "#fbd5b5", // Variante suave
         },
         secondary: {
-          DEFAULT: "#101C12",
-          soft: "#233327",
-          strong: "#0C150E",
+          DEFAULT: "#236689", // Color secundario
+          light: "#3b6b8e", // Variante clara
+          dark: "#1a4a5b", // Variante oscura
+          accent: "#1e8fb4", // Variante de acento
+          soft: "#9ec0d6", // Variante suave
         },
       },
     },
   },
   plugins: [
-    //Añadir o quitar depende
     require("flowbite/plugin"),
     require("@tailwindcss/forms"),
     iconsPlugin({ prefix: "icon" }),

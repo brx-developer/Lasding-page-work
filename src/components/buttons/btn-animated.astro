@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  addClass?: string;
+}
+
+const { addClass = "", title = "Titulo" } = Astro.props;
+---
+
+<button class={"group flex h-[52px] btn " + " " + addClass}>
+  <div class="flex translate-y-4.5 flex-col gap-3">
+    <span
+      class="duration opacity-100 group-hover:-translate-y-8 group-hover:opacity-0"
+      >{title}</span
+    >
+    <span
+      class="duration opacity-0 group-hover:-translate-y-9 group-hover:opacity-100"
+      >{title}</span
+    >
+  </div>
+</button>
