@@ -19,6 +19,9 @@ export default {
       inter: ["Inter", ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      translate: {
+        4.5: "1.125rem",
+      },
       colors: {
         primary: {
           DEFAULT: "#f57b4e", // Color principal
