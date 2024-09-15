@@ -1,0 +1,178 @@
+---
+import BtnAnimated from "@components/buttons/btn-animated.astro";
+import HeroCard from "@components/cards/hero-card.astro";
+---
+
+<!-- ====== Hero Section Start ====== -->
+<section class="isolate -z-10 md:mb-48">
+  <div class="relative -z-20 bg-cover bg-center pb-10 pt-32 md:pb-0 md:pt-7">
+    <div class="container relative mx-auto">
+      <div class="mx-auto hidden w-full text-white md:block">
+        <header class="-translate-y-8 rounded-3xl">
+          <div
+            class="duration container flex items-center justify-between p-4 *:z-50"
+          >
+            <div
+              class="flex items-center space-x-10 *:z-50 rtl:space-x-reverse"
+            >
+              <a href="/" class="">
+                <img
+                  draggable="false"
+                  src="/logo/logo.png"
+                  class="h-[1.7rem] md:h-[2.4rem]"
+                  alt="Logo"
+                />
+              </a>
+
+              <ul
+                class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-white p-4 font-medium md:mt-0 md:flex-row md:space-x-5 md:border-0 md:bg-transparent md:p-0 rtl:space-x-reverse dark:border-gray-700 dark:bg-gray-800 md:dark:bg-gray-900"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="duration block rounded bg-secondary px-3 py-2 text-white md:bg-transparent md:p-0 md:text-secondary md:dark:text-blue-500"
+                    aria-current="page">Inicio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="duration block rounded px-3 py-2 text-gray-600 hover:bg-secondary-soft md:p-0 md:hover:bg-transparent md:hover:text-secondary dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    >Acerca de</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="duration block rounded px-3 py-2 text-gray-600 hover:bg-secondary-soft md:p-0 md:hover:bg-transparent md:hover:text-secondary dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    >Servicios</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="duration block rounded px-3 py-2 text-gray-600 hover:bg-secondary-soft md:p-0 md:hover:bg-transparent md:hover:text-secondary dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    >Contacto
+                  </a>
+                </li>
+                <li>
+                  <BtnAnimated
+                    title="Empezar"
+                    addClass=" mt-3 block sm:hidden"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="flex space-x-3 md:space-x-5 rtl:space-x-reverse">
+              <div
+                class="flex flex-col items-center justify-center gap-3 text-center sm:flex-row sm:text-left"
+              >
+                <div class="rounded-full border-2 border-secondary p-1.5">
+                  <!-- class="flex size-6 items-center justify-center text-gray-600" -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.0"
+                    class="flex size-6 items-center justify-center text-gray-600"
+                    viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      fill="#4b5563"
+                      stroke="none"
+                    >
+                      <path
+                        d="M2515 5108 c-11 -6 -136 -112 -277 -235 l-257 -223 -605 0 -606 0 -32 -29 -33 -29 -3 -534 -3 -534 -23 -14 c-42 -26 -555 -479 -566 -499 -9 -18 27 -53 352 -342 200 -177 371 -329 381 -338 18 -15 21 -14 43 12 l24 28 0 1035 0 1034 1650 0 1650 0 0 -1070 c0 -588 4 -1070 8 -1070 5 0 40 28 79 63 487 434 702 628 708 637 10 17 -5 31 -305 292 l-275 240 -5 530 -5 530 -33 29 -32 29 -605 0 -605 0 -256 223 c-141 122 -265 227 -277 234 -28 15 -66 16 -92 1z"
+                      ></path>
+                      <path
+                        d="M1404 3941 c-44 -27 -60 -77 -40 -124 29 -71 -49 -67 1196 -67 1245 0 1167 -4 1196 67 20 47 4 97 -40 124 -30 18 -64 19 -1156 19 -1092 0 -1126 -1 -1156 -19z"
+                      ></path>
+                      <path
+                        d="M1404 3321 c-44 -27 -60 -77 -40 -124 29 -71 -49 -67 1196 -67 1245 0 1167 -4 1196 67 20 47 4 97 -40 124 -30 18 -64 19 -1156 19 -1092 0 -1126 -1 -1156 -19z"
+                      ></path>
+                      <path
+                        d="M4480 2249 c-338 -302 -614 -554 -613 -559 2 -5 276 -316 610 -690 l608 -680 15 38 c13 32 15 191 18 1207 2 644 0 1185 -3 1203 -3 17 -9 32 -13 31 -4 0 -284 -248 -622 -550z"
+                      ></path>
+                      <path
+                        d="M5 2758 c-3 -18 -5 -557 -3 -1198 3 -1020 5 -1170 18 -1203 l16 -38 604 676 c333 373 606 681 608 685 1 4 -257 238 -575 521 -318 283 -597 531 -620 552 l-42 38 -6 -33z"
+                      ></path>
+                      <path
+                        d="M1404 2701 c-46 -28 -61 -80 -37 -128 10 -21 29 -43 43 -50 36 -18 2264 -18 2300 0 14 7 33 29 43 50 24 48 9 100 -37 128 -30 18 -64 19 -1156 19 -1092 0 -1126 -1 -1156 -19z"
+                      ></path>
+                      <path
+                        d="M970 2217 c14 -13 129 -117 257 -230 l232 -207 1091 0 1091 0 232 207 c128 113 243 217 257 230 l25 23 -1605 0 -1605 0 25 -23z"
+                      ></path>
+                      <path
+                        d="M804 865 c-352 -394 -639 -721 -639 -728 0 -19 104 -84 175 -109 l65 -23 2155 0 2155 0 66 23 c65 22 169 86 176 107 2 6 -285 333 -637 728 l-641 717 -1118 0 -1119 0 -638 -715z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="flex flex-col justify-center gap-2">
+                  <p class="font-semibold leading-3 text-primary">Email Us:</p>
+                  <p class="leading-3 text-gray-600 text-secondary">
+                    info@gmail.com
+                  </p>
+                </div>
+              </div>
+              <BtnAnimated title="Empezar" addClass="hidden sm:flex" />
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="relative w-full px-4 pb-10 md:pb-56 lg:w-[50%]">
+          <div class="hero-content space-y-5">
+            <h6
+              class="subtitle flex items-center gap-3 text-primary lg:justify-start"
+            >
+              Comentarios para inspirarse
+            </h6>
+            <h1 class="large-title">Agencia Digital Creativa</h1>
+            <p>
+              Creemos que un gran diseño no debe estar fuera de nuestro alcance,
+              nuestros servicios cuestan menos de la mitad del precio de un
+              diseñador a tiempo completo.
+            </p>
+            <BtnAnimated title="Empezar" />
+          </div>
+        </div>
+        <div class="hidden w-full px-4 pr-0 md:block lg:block lg:w-[50%]">
+          <div class="flex size-full lg:ml-auto lg:text-right">
+            <div
+              class="relative z-10 inline-flex size-full items-center pt-11 lg:pt-0"
+            >
+              <img
+                src="/hero/man.png"
+                alt="hero"
+                class="w-full max-w-full origin-top-right scale-90 lg:ml-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bottom-0 left-0 z-10 mx-auto grid w-full gap-10 *:w-full md:absolute md:flex md:translate-y-1/2 md:*:w-1/3"
+      >
+        <HeroCard
+          title="Future Vision."
+          p="It is a long established fact that a reader will be distracted by thereadable content of a page."
+          ><span class="icon-[bxs--bar-chart-square]"></span></HeroCard
+        >
+        <HeroCard
+          title="Product Desing."
+          p="There are many variations of passages of available, but the majority alteration in some form."
+          ><span class="icon-[material-symbols--rocket-launch-rounded]"
+          ></span></HeroCard
+        >
+        <HeroCard
+          title="Inovative Solutions."
+          p="The generated Lorem Ipsum is therefore always free from repetition, injected humour."
+          ><span class="icon-[tabler--chart-pie-filled]"></span></HeroCard
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Hero Section End -->

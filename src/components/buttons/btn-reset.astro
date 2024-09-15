@@ -1,0 +1,85 @@
+<button
+  id="scrollToTopBtn"
+  class="duration fixed bottom-4 right-4 z-50 flex scale-0 transform rounded-full bg-secondary p-3 text-white opacity-0 shadow-lg ease-in-out hover:bg-secondary/80"
+  aria-label="Volver arriba"
+>
+  <span class="icon-[fa6-solid--arrow-up] size-5 group-hover:-translate-y-5"
+  ></span>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("scrollToTopBtn");
+
+    function scrollToTop() {
+      const duration = 300; // Duración de la animación en milisegundos
+      const start = window.scrollY;
+      const startTime = performance.now();
+
+      function animateScroll(time) {
+        const elapsed = time - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3); // Easing cúbico
+        window.scrollTo(0, start * (1 - ease));
+
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
+        } else {
+          window.scrollTo(0, 0); // Asegura que se detiene en la parte superior
+        }
+      }
+
+      requestAnimationFrame(animateScroll);
+    }
+
+    function toggleButtonVisibility() {
+      if (window.scrollY > 100) {
+        button.style.opacity = 1;
+        button.style.transform = "scale(1)"; // Mostrar con escala normal
+      } else {
+        // Primero aplicar la escala pequeña
+        button.style.transform = " scale(0)";
+
+        button.addEventListener(
+          "transitionend",
+          () => {
+            // Ocultar el botón después de la transición de escala
+            button.style.opacity = 1;
+          },
+          { once: true }
+        ); // Asegura que el evento se ejecute solo una vez
+      }
+    }
+
+    function toggleButtonVisibility2() {
+      if (window.scrollY > 100) {
+        // Forzar reflujo para garantizar que la animación se aplique correctamente
+        button.style.transition = "none";
+        button.style.opacity = 0;
+        button.style.transform = "scale(0)";
+
+        requestAnimationFrame(() => {
+          button.style.transition = ""; // Restablecer transición
+          button.style.opacity = 1;
+          button.style.transform = "scale(1)"; // Mostrar con escala normal
+        });
+      } else {
+        // Aplicar la escala pequeña y ocultar el botón
+        button.style.opacity = 0;
+        button.style.transform = "scale(0)";
+      }
+    }
+
+    button.addEventListener("click", scrollToTop);
+    window.addEventListener("scroll", toggleButtonVisibility);
+
+    // Inicialmente establecer la visibilidad del botón
+
+    button.addEventListener("click", scrollToTop);
+    window.addEventListener("scroll", toggleButtonVisibility);
+
+    // Inicialmente establecer la visibilidad del botón
+    toggleButtonVisibility();
+    toggleButtonVisibility2();
+  });
+</script>
