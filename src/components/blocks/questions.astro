@@ -1,0 +1,115 @@
+<section
+    class="bg-gray-100 bg-[url(questions/background.png)] bg-cover bg-center py-10"
+>
+    <div class="container grid grid-cols-2 gap-10">
+        <div
+            x-data="{
+activeAccordion: '',
+setActiveAccordion(id) {
+this.activeAccordion = (this.activeAccordion == id) ? '' : id
+}
+}"
+            class="relative mx-auto w-full space-y-5 overflow-hidden rounded-md text-sm font-normal"
+        >
+            <div
+                x-data="{ id: $id('accordion') }"
+                class="group cursor-pointer rounded-md bg-white px-7 py-2"
+            >
+                <button
+                    @click="setActiveAccordion(id)"
+                    class="flex w-full select-none items-center justify-between p-4 text-left group-hover:underline"
+                >
+                    <h6 class="text-primary">
+                        ¿Mi tecnología está permitida en la tecnología?
+                    </h6>
+                    <svg
+                        class="h-4 w-4 rotate-180 duration-200 ease-out"
+                        :class=""
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ><polyline points="6 9 12 15 18 9"></polyline></svg
+                    >
+                </button>
+                <div x-collapse x-cloak>
+                    <p class="p-4 pr-10 pt-0 opacity-70">
+                        Suspendisse finibus urna mauris, vitae consequat quam
+                        vel. Vestibulum leo ligula, vit commodo nisl Sed luctus
+                        venenatis pellentesque tincidunt elit
+                    </p>
+                </div>
+            </div>
+            <div
+                x-data="{ id: $id('accordion') }"
+                class="group cursor-pointer rounded-md bg-white px-7 py-2"
+            >
+                <button
+                    @click="setActiveAccordion(id)"
+                    class="flex w-full select-none items-center justify-between p-4 text-left group-hover:underline"
+                >
+                    <span>How do I install Pines?</span>
+                    <svg
+                        class="h-4 w-4 duration-200 ease-out"
+                        :class="{ 'rotate-180': activeAccordion==id }"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ><polyline points="6 9 12 15 18 9"></polyline></svg
+                    >
+                </button>
+                <div x-show="activeAccordion==id" x-collapse x-cloak>
+                    <div class="p-4 pt-0 opacity-70">
+                        Add AlpineJS and TailwindCSS to your page and then copy
+                        and paste any of these elements into your project.
+                    </div>
+                </div>
+            </div>
+            <div
+                x-data="{ id: $id('accordion') }"
+                class="group cursor-pointer rounded-md bg-white px-7 py-2"
+            >
+                <button
+                    @click="setActiveAccordion(id)"
+                    class="flex w-full select-none items-center justify-between p-4 text-left group-hover:underline"
+                >
+                    <span
+                        >Can I use Pines with other libraries or frameworks?</span
+                    >
+                    <svg
+                        class="h-4 w-4 duration-200 ease-out"
+                        :class="{ 'rotate-180': activeAccordion==id }"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ><polyline points="6 9 12 15 18 9"></polyline></svg
+                    >
+                </button>
+                <div x-show="activeAccordion==id" x-collapse x-cloak>
+                    <div class="p-4 pt-0 opacity-70">
+                        Absolutely! Pines works with any other library or
+                        framework. Pines works especially well with the TALL
+                        stack.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div
+                class="h-full w-full bg-[url(questions/people.jpg)] bg-cover bg-center"
+            >
+            </div>
+        </div>
+    </div>
+</section>
