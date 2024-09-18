@@ -28,6 +28,7 @@
   "devDependencies": {
     "@egoist/tailwindcss-icons": "^1.8.1",
     "@iconify/json": "^2.2.235",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",

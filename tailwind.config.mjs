@@ -44,6 +44,7 @@ export default {
     require("flowbite/plugin"),
     require("@tailwindcss/forms"),
     iconsPlugin({ prefix: "icon" }),
+    require("@tailwindcss/aspect-ratio"),
     dynamicIconsPlugin({ prefix: "icon" }),
   ],
 };
