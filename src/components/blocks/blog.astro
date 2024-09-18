@@ -3,15 +3,29 @@ import CardBlog from "@components/cards/card-blog.astro";
 ---
 
 <section class="bg-gray-100 py-20">
-    <div class="container flex flex-col items-center">
-        <h6 class="subtitle mx-auto text-center text-primary">
-            Trabajos recientes completados
-        </h6>
-        <h1 class="py-5 text-center text-secondary">Lo último del blog</h1>
-        <div class="grid grid-cols-3 gap-5">
-            <CardBlog />
-            <CardBlog />
-            <CardBlog />
-        </div>
+  <div class="container flex flex-col items-center gap-y-14">
+    <div class="flex flex-col justify-center">
+      <h6 class="subtitle mx-auto text-center text-primary">
+        Trabajos recientes completados
+      </h6>
+      <h1 class="text-center text-secondary">Lo último del blog</h1>
     </div>
+    <div class="grid grid-cols-3 gap-5">
+      <CardBlog
+        title="Reglas básicas para gestionar un negocio de agencia web"
+        p="Lorem ipsum es simplemente texto usado al copiar y escribir de forma refrescante."
+        img="blog/card-1.png"
+      />
+      <CardBlog
+        title="Aprovechar los marcos para proporcionar una sólida"
+        p="Lorem ipsum es simplemente texto usado al copiar y escribir de forma refrescante."
+        img="blog/card-2.png"
+      />
+      <CardBlog
+        title="Cultivar orgánicamente la visión holística del mundo"
+        p="Lorem ipsum es simplemente texto usado al copiar y escribir de forma refrescante."
+        img="blog/card-3.png"
+      />
+    </div>
+  </div>
 </section>
