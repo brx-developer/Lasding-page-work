@@ -1,35 +1,36 @@
 ---
 interface Props {
-    title: string;
-    parrafo: string;
-    subtitle: string;
+  title: string;
+  parrafo: string;
+  subtitle: string;
 }
 
 const { subtitle, title, parrafo } = Astro.props;
 ---
 
 <div
-    class="relative rounded-lg bg-white p-10 shadow-[0_35px_60px_-25px_rgba(0,0,0,0.3)]"
+  class="relative rounded-lg bg-white p-10 shadow-[0_35px_60px_-25px_rgba(0,0,0,0.3)]"
 >
-    <p class="text-xl leading-10">
-        {parrafo}
-    </p>
-    <h6 class="pt-3 font-semibold">{title}</h6>
-    <div class="flex items-center justify-between">
-        <h6 class="text-primary">{subtitle}</h6>
-        <img
-            src="testimonials/testimonials-1.png"
-            alt=""
-            class="h-16 pb-5 pr-5"
-        />
-    </div>
-    <div
-        class="absolute bottom-0 right-0 flex translate-y-7 rounded-lg bg-primary p-3 px-8"
-    >
-        <span class="icon-[ic--sharp-star] size-5 text-white"></span>
-        <span class="icon-[ic--sharp-star] size-5 text-white"></span>
-        <span class="icon-[ic--sharp-star] size-5 text-white"></span>
-        <span class="icon-[ic--sharp-star] size-5 text-white"></span>
-        <span class="icon-[ic--sharp-star-half] size-5 text-white"></span>
-    </div>
+  <p class="text-xl leading-10">
+    {parrafo}
+  </p>
+  <h6 class="pt-3 font-semibold">{title}</h6>
+  <div class="flex items-center justify-between">
+    <h6 class="text-primary">{subtitle}</h6>
+    <img
+      src="testimonials/testimonials-1.png"
+      alt=""
+      draggable="false"
+      class="h-16 pb-5 pr-5"
+    />
+  </div>
+  <div
+    class="absolute bottom-0 right-0 flex translate-y-7 rounded-lg bg-primary p-3 px-8"
+  >
+    <span class="icon-[ic--sharp-star] size-5 text-white"></span>
+    <span class="icon-[ic--sharp-star] size-5 text-white"></span>
+    <span class="icon-[ic--sharp-star] size-5 text-white"></span>
+    <span class="icon-[ic--sharp-star] size-5 text-white"></span>
+    <span class="icon-[ic--sharp-star-half] size-5 text-white"></span>
+  </div>
 </div>

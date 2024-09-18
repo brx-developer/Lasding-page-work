@@ -1,56 +1,157 @@
-<section class="py-10">
-    <div class="container grid grid-cols-1 lg:grid-cols-2">
-        <div class="flex flex-col gap-6 px-10">
-            <h6 class="subtitle">Contacta con nosotros</h6>
-            <h2 class="text-gray-900">¿Trabajemos juntos?</h2>
-            <p>
-                Sed ut perspiciatis unde omnis natus error sit voluptatem accusa
-                ntium doloremque laudantium totam rem.
-            </p>
-            <div class="flex flex-col gap-10">
-                <div class="flex items-center gap-5">
-                    <div
-                        class="bg-primary p-3 px-5 py-4 transition-all hover:bg-gray-800"
-                    >
-                        <span class="icon-[ph--phone-fill] size-10 text-white"
-                        ></span>
-                    </div>
-                    <div>
-                        <p>¿Tienes alguna pregunta?</p>
-                        <h6 class="font-semibold text-gray-900">
-                            Gratis +23 (000)-9850
-                        </h6>
-                    </div>
-                </div>
-                <div class="flex items-center gap-5">
-                    <div
-                        class="bg-primary p-3 px-5 py-4 transition-all hover:bg-gray-800"
-                    >
-                        <span class="icon-[tabler--mail] size-10 text-white"
-                        ></span>
-                    </div>
-                    <div>
-                        <p>Enviar correo electrónico</p>
-                        <h6 class="font-semibold text-gray-900">
-                            needhelp@company.com
-                        </h6>
-                    </div>
-                </div>
-                <div class="flex items-center gap-5">
-                    <div
-                        class="bg-primary p-3 px-5 py-4 transition-all hover:bg-gray-800"
-                    >
-                        <span class="icon-[typcn--location] size-10 text-white"
-                        ></span>
-                    </div>
-                    <div>
-                        <p>Visita en cualquier momento</p>
-                        <h6 class="font-semibold text-gray-900">
-                            30 de la calle Dorada de Broklyn. Nueva York
-                        </h6>
-                    </div>
-                </div>
-            </div>
+---
+import BtnAnimated from "@components/buttons/btn-animated.astro";
+---
+
+<section
+  class="bg-[url(/contact/background.jpg)] bg-cover bg-center py-10 pb-20"
+>
+  <div class="container grid gap-10 lg:grid-cols-2 lg:gap-32">
+    <div class="flex flex-col gap-6 px-10">
+      <h6 class="subtitle text-primary">Contacta con nosotros</h6>
+      <h2 class="text-secondary">¿Trabajemos juntos?</h2>
+      <p>
+        Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium
+        doloremque laudantium totam rem.
+      </p>
+      <div class="flex flex-col gap-10">
+        <div class="flex items-center gap-5">
+          <div
+            class="duration rounded-md bg-primary p-3 px-5 py-4 duration-200 hover:bg-secondary-accent"
+          >
+            <span class="icon-[ph--phone-fill] size-10 text-white"></span>
+          </div>
+          <div>
+            <p>¿Tienes alguna pregunta?</p>
+            <h6 class="font-semibold text-gray-900">Gratis +23 (000)-9850</h6>
+          </div>
         </div>
+        <div class="flex items-center gap-5">
+          <div
+            class="duration rounded-md bg-primary p-3 px-5 py-4 duration-200 hover:bg-secondary-accent"
+          >
+            <span class="icon-[tabler--mail] size-10 text-white"></span>
+          </div>
+          <div>
+            <p>Enviar correo electrónico</p>
+            <h6 class="font-semibold text-gray-900">needhelp@company.com</h6>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <div
+            class="duration rounded-md bg-primary p-3 px-5 py-4 duration-200 hover:bg-secondary-accent"
+          >
+            <span class="icon-[typcn--location] size-10 text-white"></span>
+          </div>
+          <div>
+            <p>Visita en cualquier momento</p>
+            <h6 class="font-semibold text-gray-900">
+              30 de la calle Dorada de Broklyn. Nueva York
+            </h6>
+          </div>
+        </div>
+      </div>
     </div>
+    <div
+      class="flex size-full flex-col content-center justify-center space-y-10 rounded-md bg-gray-50 p-[40px_60px_40px_60px] text-center shadow-[-10px_0px_30px_0px_rgba(0,0,0,0.07)]"
+    >
+      <h2 class="text-secondary">Contact Us</h2>
+      <form class="text-left">
+        <div class="space-y-4">
+          <!-- Input -->
+          <div class="relative">
+            <input
+              type="text"
+              id="hs-tac-input-name"
+              class="peer block w-full rounded-lg border border-secondary bg-gray-100 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
+              placeholder="Nombre
+"
+              required
+            />
+            <label
+              for="hs-tac-input-name"
+              class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
+              >Nombre</label
+            >
+          </div>
+          <!-- End Input -->
+
+          <!-- Input -->
+          <div class="relative">
+            <input
+              type="email"
+              id="hs-tac-input-email"
+              class="peer block w-full rounded-lg border border-secondary bg-gray-100 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
+              placeholder="Correo electrónico
+"
+              required
+            />
+            <label
+              for="hs-tac-input-email"
+              class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
+              >Correo electrónico
+            </label>
+          </div>
+          <!-- End Input -->
+
+          <!-- Textarea -->
+          <div class="relative overflow-hidden rounded-lg">
+            <textarea
+              id="hs-tac-message"
+              class="peer block min-h-32 w-full select-none rounded-lg border border-secondary bg-gray-100 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
+              placeholder="This is a textarea placeholder"
+              required></textarea>
+            <label
+              for="hs-tac-message"
+              class="peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 m-1 mt-0 h-auto w-full max-w-[95%] truncate rounded-sm border border-secondary border-transparent border-t-secondary bg-gradient-to-b from-transparent from-20% via-gray-100 via-[15%] to-gray-100 to-50% p-4 pb-0 text-sm transition duration-100 ease-in-out focus:border-primary peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
+            >
+              Cuéntanos sobre tu proyecto
+            </label>
+          </div>
+          <!-- End Textarea -->
+        </div>
+
+        <div class="mt-2">
+          <p class="text-xs text-gray-900">Todos los campos son obligatorios</p>
+
+          <p class="mt-5">
+            <BtnAnimated title="Entregar" addClass="">
+              <span
+                class="icon-[mingcute--arrow-right-line] flex size-5 items-center"
+              ></span>
+            </BtnAnimated>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
 </section>
+
+<!-- JS INITIALIZATIONS -->
+<script>
+  (function () {
+    function textareaAutoHeight(el, offsetTop = 0) {
+      el.style.height = "auto";
+      el.style.height = `${el.scrollHeight + offsetTop}px`;
+    }
+
+    (function () {
+      const textareas = ["#hs-tac-message"];
+
+      textareas.forEach((el) => {
+        const textarea = document.querySelector(el);
+        const overlay = textarea.closest(".hs-overlay");
+
+        if (overlay) {
+          const { element } = HSOverlay.getInstance(overlay, true);
+
+          element.on("open", () => textareaAutoHeight(textarea, 3));
+        } else textareaAutoHeight(textarea, 3);
+
+        textarea.addEventListener("input", () => {
+          textareaAutoHeight(textarea, 3);
+        });
+      });
+    })();
+  })();
+</script>
+<!-- End JS INITIALIZATIONS -->
