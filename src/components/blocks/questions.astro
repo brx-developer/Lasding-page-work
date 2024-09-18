@@ -1,7 +1,11 @@
 <section
-    class="bg-gray-100 bg-[url(questions/background.png)] bg-cover bg-center py-10"
+    class="bg-gray-100 bg-[url(questions/background.png)] bg-cover bg-center py-20"
 >
-    <div class="container grid grid-cols-2 gap-10">
+    <div class="flex flex-col items-center py-10">
+        <h5 class="subtitle text-primary">¿Tienes alguna pregunta?</h5>
+        <h2 class="text-secondary">Preguntas frecuentes</h2>
+    </div>
+    <div class="container grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div
             x-data="{
 activeAccordion: '',
@@ -19,7 +23,7 @@ this.activeAccordion = (this.activeAccordion == id) ? '' : id
                     @click="setActiveAccordion(id)"
                     class="flex w-full select-none items-center justify-between p-4 text-left group-hover:underline"
                 >
-                    <h6 class="text-primary">
+                    <h6 class="border-b-2 py-5 text-primary">
                         ¿Mi tecnología está permitida en la tecnología?
                     </h6>
                     <svg
@@ -51,7 +55,9 @@ this.activeAccordion = (this.activeAccordion == id) ? '' : id
                     @click="setActiveAccordion(id)"
                     class="flex w-full select-none items-center justify-between p-4 text-left group-hover:underline"
                 >
-                    <span>How do I install Pines?</span>
+                    <span class="font-bold text-gray-900"
+                        >¿Cómo lanzar suavemente tu negocio?</span
+                    >
                     <svg
                         class="h-4 w-4 duration-200 ease-out"
                         :class="{ 'rotate-180': activeAccordion==id }"
@@ -80,8 +86,8 @@ this.activeAccordion = (this.activeAccordion == id) ? '' : id
                     @click="setActiveAccordion(id)"
                     class="flex w-full select-none items-center justify-between p-4 text-left group-hover:underline"
                 >
-                    <span
-                        >Can I use Pines with other libraries or frameworks?</span
+                    <span class="font-bold text-gray-900"
+                        >Cómo convertir a los visitantes en colaboradores</span
                     >
                     <svg
                         class="h-4 w-4 duration-200 ease-out"
@@ -107,7 +113,7 @@ this.activeAccordion = (this.activeAccordion == id) ? '' : id
         </div>
         <div class="flex">
             <div
-                class="h-full w-full bg-[url(questions/people.jpg)] bg-cover bg-center"
+                class="h-full w-full rounded-md bg-[url(questions/people.jpg)] bg-cover bg-center"
             >
             </div>
         </div>
