@@ -1,0 +1,17 @@
+---
+import CardBlog from "@components/cards/card-blog.astro";
+---
+
+<section class="bg-gray-100 py-20">
+    <div class="container flex flex-col items-center">
+        <h6 class="subtitle mx-auto text-center text-primary">
+            Trabajos recientes completados
+        </h6>
+        <h1 class="py-5 text-center text-secondary">Lo último del blog</h1>
+        <div class="grid grid-cols-3 gap-5">
+            <CardBlog />
+            <CardBlog />
+            <CardBlog />
+        </div>
+    </div>
+</section>
