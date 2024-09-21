@@ -9,8 +9,8 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
         scrollPos = window.scrollY;
     });
   "
-  :class="{ 'shadow-md  md:!bg-opacity-90 md:-translate-y-0 opacity-100': scrollPos > 150  ,' !bg-opacity-100  md:-translate-y-full md:opacity-0': scrollPos < 150 }"
-  class="duration fixed z-[99] mb-10 w-full -translate-y-0 !bg-white duration-300 md:-translate-y-full md:opacity-0 md:backdrop-blur-sm"
+  :class="{ 'shadow-md  lg:!bg-opacity-90 lg:-translate-y-0 opacity-100': scrollPos > 150  ,' !bg-opacity-100  lg:-translate-y-full lg:opacity-0': scrollPos < 150 }"
+  class="duration fixed z-[99] mb-10 w-full -translate-y-0 !bg-white duration-300 lg:-translate-y-full lg:opacity-0 lg:backdrop-blur-sm"
 >
   <div
     class="duration container flex flex-wrap items-center justify-between p-4 *:z-50"
@@ -19,7 +19,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
       <button
         data-collapse-toggle="navbar-cta"
         type="button"
-        class="duration z-50 inline-flex size-6 items-center justify-center rounded-lg p-5 text-sm text-gray-500 hover:bg-gray-200 md:hidden md:size-10"
+        class="duration z-50 inline-flex size-6 items-center justify-center rounded-lg p-5 text-sm text-gray-500 hover:bg-gray-200 lg:hidden lg:size-10"
         aria-controls="navbar-cta"
         aria-expanded="false"
       >
@@ -44,39 +44,39 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
         <!-- <img
           draggable="false"
           src="/logo/logo.png"
-          class="h-[1.9rem] md:h-[2.7rem]"
+          class="h-[1.9rem] lg:h-[2.7rem]"
           alt="Logo"
         /> -->
         <img
           draggable="false"
           src="/logo/logotipo.png"
-          class="h-[2.5rem] md:h-[3.5rem]"
+          class="h-[2.5rem] lg:h-[3.5rem]"
           alt="Logo"
         />
       </a>
     </div>
 
-    <div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
+    <div class="flex space-x-3 lg:order-2 lg:space-x-0 rtl:space-x-reverse">
       <BtnAnimated title="Empezar" addClass="hidden sm:flex" />
     </div>
     <div
-      class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
+      class="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto"
       id="navbar-cta"
     >
       <ul
-        class="md: mt-4 flex flex-col rounded-lg bg-white p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0 rtl:space-x-reverse"
+        class="lg: mt-4 flex flex-col rounded-lg bg-white p-4 font-medium lg:mt-0 lg:flex-row lg:space-x-8 lg:border-0 lg:bg-transparent lg:p-0 rtl:space-x-reverse"
       >
         <li>
           <a
             href="#"
-            class="duration block rounded bg-secondary px-3 py-2 text-white md:bg-transparent md:p-0 md:text-secondary"
+            class="duration block rounded bg-secondary px-3 py-2 text-white lg:bg-transparent lg:p-0 lg:text-secondary"
             aria-current="page">Inicio</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="duration block rounded px-3 py-2 text-gray-600 hover:bg-gray-200 md:p-0 md:hover:bg-transparent md:hover:text-secondary"
+            class="duration block rounded px-3 py-2 text-gray-600 hover:bg-gray-200 lg:p-0 lg:hover:bg-transparent lg:hover:text-secondary"
           >
             Acerca de</a
           >
@@ -93,7 +93,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
           >
             <div class="flex items-center justify-between pr-4">
               <!-- Link for Small Screens -->
-              <a href="#" class="px-3 py-2 text-gray-600 md:hidden">
+              <a href="#" class="px-3 py-2 text-gray-600 lg:hidden">
                 Actions Menu
               </a>
 
@@ -101,7 +101,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
               <button
                 type="button"
                 @click="isOpen = !isOpen"
-                class="inline-flex items-center gap-2 text-gray-600 md:hidden"
+                class="inline-flex items-center gap-2 text-gray-600 lg:hidden"
                 aria-expanded="isOpen"
                 aria-haspopup="true"
               >
@@ -117,7 +117,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
               @keydown.space.prevent="openedWithKeyboard = true"
               @keydown.enter.prevent="openedWithKeyboard = true"
               @keydown.down.prevent="openedWithKeyboard = true"
-              class="hidden items-center gap-2 whitespace-nowrap rounded font-medium text-gray-600 transition hover:bg-gray-200 hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-800 md:inline-flex md:p-0 md:hover:bg-transparent md:hover:text-secondary"
+              class="hidden items-center gap-2 whitespace-nowrap rounded font-medium text-gray-600 transition hover:bg-gray-200 hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-800 lg:inline-flex lg:p-0 lg:hover:bg-transparent lg:hover:text-secondary"
               :aria-expanded="isOpen || openedWithKeyboard"
               aria-haspopup="true"
             >
@@ -137,7 +137,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
               @click.outside="isOpen = false, openedWithKeyboard = false"
               @keydown.down.prevent="$focus.wrap().next()"
               @keydown.up.prevent="$focus.wrap().previous()"
-              class="left-0 top-11 z-10 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 py-1.5 shadow-md md:absolute md:bg-white md:bg-opacity-95 md:backdrop-blur-sm"
+              class="left-0 top-11 z-10 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 py-1.5 shadow-md lg:absolute lg:bg-white lg:bg-opacity-95 lg:backdrop-blur-sm"
               role="menu"
             >
               <a
@@ -163,7 +163,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
                   <!-- Link for Small Screens -->
                   <a
                     href="#"
-                    class="duration px-3 px-4 py-2 text-sm text-secondary hover:text-primary focus-visible:outline-none md:hidden"
+                    class="duration px-3 px-4 py-2 text-sm text-secondary hover:text-primary focus-visible:outline-none lg:hidden"
                   >
                     Actions Menu
                   </a>
@@ -172,7 +172,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
                   <button
                     type="button"
                     @click="isOpen = !isOpen"
-                    class="inline-flex items-center gap-2 text-gray-600 md:hidden"
+                    class="inline-flex items-center gap-2 text-gray-600 lg:hidden"
                     aria-expanded="isOpen"
                     aria-haspopup="true"
                   >
@@ -189,7 +189,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
                   @keydown.space.prevent="openedWithKeyboard = true"
                   @keydown.enter.prevent="openedWithKeyboard = true"
                   @keydown.down.prevent="openedWithKeyboard = true"
-                  class="hidden items-center gap-2 whitespace-nowrap rounded font-medium text-gray-600 transition hover:bg-gray-200 hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-800 md:inline-flex md:p-0 md:hover:bg-transparent md:hover:text-secondary"
+                  class="hidden items-center gap-2 whitespace-nowrap rounded font-medium text-gray-600 transition hover:bg-gray-200 hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-800 lg:inline-flex lg:p-0 lg:hover:bg-transparent lg:hover:text-secondary"
                   :aria-expanded="isOpen || openedWithKeyboard"
                   aria-haspopup="true"
                 >
@@ -211,7 +211,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
                   @click.outside="isOpen = false, openedWithKeyboard = false"
                   @keydown.down.prevent="$focus.wrap().next()"
                   @keydown.up.prevent="$focus.wrap().previous()"
-                  class="left-0 top-7 z-20 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 bg-opacity-100 py-1.5 shadow-md md:absolute md:left-full md:top-0 md:ml-1 md:bg-white md:bg-opacity-95 md:backdrop-blur-sm"
+                  class="left-0 top-7 z-20 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 bg-opacity-100 py-1.5 shadow-md lg:absolute lg:left-full lg:top-0 lg:ml-1 lg:bg-white lg:bg-opacity-95 lg:backdrop-blur-sm"
                   role="menu"
                 >
                   <a
@@ -237,14 +237,14 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
         <li>
           <a
             href="#"
-            class="duration block rounded px-3 py-2 text-gray-600 hover:bg-gray-200 md:p-0 md:hover:bg-transparent md:hover:text-secondary"
+            class="duration block rounded px-3 py-2 text-gray-600 hover:bg-gray-200 lg:p-0 lg:hover:bg-transparent lg:hover:text-secondary"
             >Servicios
           </a>
         </li>
         <li>
           <a
             href="#"
-            class="duration block rounded px-3 py-2 text-gray-600 hover:bg-gray-200 md:p-0 md:hover:bg-transparent md:hover:text-secondary"
+            class="duration block rounded px-3 py-2 text-gray-600 hover:bg-gray-200 lg:p-0 lg:hover:bg-transparent lg:hover:text-secondary"
             >Contacto
           </a>
         </li>

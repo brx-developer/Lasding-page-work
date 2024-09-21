@@ -34,7 +34,7 @@
   }
 
   .gradient {
-    @apply from-primary-accent to-primary bg-gradient-to-r;
+    @apply from-secondary-light/60 to-primary bg-gradient-to-r;
   }
 
   .list {
@@ -52,8 +52,8 @@
 
   .btn {
     @apply transition-all duration-300;
-    @apply from-primary to-primary-dark bg-gradient-to-r;
-    @apply bg-primary-dark relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md px-4 py-3 text-base font-semibold text-white;
+    @apply from-primary to-secondary-light/60 bg-gradient-to-r;
+    @apply bg-primary relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md px-4 py-3 text-base font-semibold text-white;
 
     &:hover {
       @apply bg-gradient-to-l;
