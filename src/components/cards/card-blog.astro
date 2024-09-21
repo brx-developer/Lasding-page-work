@@ -9,8 +9,8 @@ const { title, p, img } = Astro.props;
 ---
 
 <div class="flex h-full flex-col justify-center">
-  <div class="relative rounded-t-md">
-    <div class="group relative overflow-hidden rounded-t-md">
+  <div class="group relative rounded-t-md">
+    <div class="relative overflow-hidden rounded-t-md">
       <img
         src={img}
         alt=""
@@ -25,7 +25,7 @@ const { title, p, img } = Astro.props;
       </div>
     </div>
     <button
-      class="absolute end-4 z-20 flex -translate-y-1/2 flex-col items-center justify-center rounded-md bg-primary p-4 py-5 font-semibold leading-3 text-white"
+      class="group-hover:-translte-y-2/3 absolute end-4 z-20 flex -translate-y-1/2 flex-col items-center justify-center rounded-md bg-primary p-4 py-5 font-semibold leading-3 text-white transition-all duration-500"
     >
       20 <span class="text-xs">May</span>
     </button>
@@ -33,20 +33,21 @@ const { title, p, img } = Astro.props;
   <div class="h-full bg-white px-10">
     <div class="flex gap-5 py-5 text-xs font-semibold">
       <p
-        class="flex cursor-pointer items-center gap-3 transition-all hover:text-primary"
+        class="flex cursor-pointer items-center gap-3 transition-all duration-300 hover:text-primary"
       >
         <span class="icon-[bi--people] text-primary"></span> Por admin
       </p>
       <p
-        class="flex cursor-pointer items-center gap-3 transition-all hover:text-primary"
+        class="flex cursor-pointer items-center gap-3 transition-all duration-300 hover:text-primary"
       >
-        <span class="icon-[vaadin--comments-o] text-primary"></span>
+        <span class="icon-[vaadin--comments-o] text-primary transition-all"
+        ></span>
         2 comentarios
       </p>
     </div>
     <div class="h-full pb-5">
       <h6
-        class="p font-bold text-gray-900 transition-all duration-300 hover:text-primary"
+        class="p cursor-pointer font-bold text-gray-900 transition-all duration-300 hover:text-primary"
       >
         {title}
       </h6>
@@ -54,12 +55,14 @@ const { title, p, img } = Astro.props;
         {p}
       </p>
       <div
-        class="flex items-center justify-between border-t-2 pt-3 transition-all"
+        class="group flex items-center justify-between border-t-2 pt-3 transition-all"
       >
-        <button class="duration-300 hover:text-primary">leer más</button>
-        <span
-          class="icon-[maki--arrow] cursor-pointer duration-300 hover:text-primary"
-        ></span>
+        <button class="duration-300 group-hover:text-primary">leer más</button>
+        <div class="transition-all duration-300 group-hover:translate-x-1">
+          <span
+            class="icon-[maki--arrow] cursor-pointer duration-300 group-hover:text-primary"
+          ></span>
+        </div>
       </div>
     </div>
   </div>
