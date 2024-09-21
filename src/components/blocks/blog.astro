@@ -3,13 +3,14 @@ import CardBlog from "@components/cards/card-blog.astro";
 ---
 
 <section class="bg-gray-100 py-20">
-  <div class="container flex flex-col items-center gap-y-14">
+  <div class="container">
     <div class="flex flex-col justify-center">
-      <h4 class="subtitle text-primary">Trabajos recientes completados</h4>
-
-      <h2 class="text-center text-secondary">Lo último del blog</h2>
+      <h6 class="subtitle mx-auto text-center text-primary">
+        Trabajos recientes completados
+      </h6>
+      <h1 class="pb-10 text-center text-secondary">Lo último del blog</h1>
     </div>
-    <div class="grid grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
       <CardBlog
         title="Reglas básicas para gestionar un negocio de agencia web"
         p="Lorem ipsum es simplemente texto usado al copiar y escribir de forma refrescante."
