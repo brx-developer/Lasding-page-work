@@ -23,19 +23,33 @@ export default {
         4.5: "1.125rem",
       },
       colors: {
+        // primary: {
+        //   DEFAULT: "#f57b4e", // Color principal
+        //   light: "#ff8c5e", // Variante clara
+        //   dark: "#c44e2e", // Variante oscura
+        //   accent: "#ffa800", // Variante de acento
+        //   soft: "#fbd5b5", // Variante suave
+        // },
+        // secondary: {
+        //   DEFAULT: "#236689", // Color secundario
+        //   light: "#3b6b8e", // Variante clara
+        //   dark: "#1a4a5b", // Variante oscura
+        //   accent: "#1e8fb4", // Variante de acento
+        //   soft: "#9ec0d6", // Variante suave
+        // },
         primary: {
-          DEFAULT: "#f57b4e", // Color principal
-          light: "#ff8c5e", // Variante clara
-          dark: "#c44e2e", // Variante oscura
-          accent: "#ffa800", // Variante de acento
-          soft: "#fbd5b5", // Variante suave
+          DEFAULT: "#5BE4C0", // Color secundario
+          light: "#7AEACC", // Variante clara
+          dark: "#49B699", // Variante oscura
+          accent: "#00FFBB", // Variante de acento
+          soft: "#E4F2EE", // Variante suave
         },
         secondary: {
-          DEFAULT: "#236689", // Color secundario
-          light: "#3b6b8e", // Variante clara
-          dark: "#1a4a5b", // Variante oscura
-          accent: "#1e8fb4", // Variante de acento
-          soft: "#9ec0d6", // Variante suave
+          DEFAULT: "#186FE4", // Color principal
+          light: "#3581E8", // Variante clara
+          dark: "#1356AF", // Variante oscura
+          accent: "#006FFF", // Variante de acento
+          soft: "#DCE7F5", // Variante suave
         },
       },
     },

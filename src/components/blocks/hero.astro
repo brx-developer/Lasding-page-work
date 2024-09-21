@@ -11,7 +11,7 @@ import HeroCard from "@components/cards/hero-card.astro";
       scrollPos = window.scrollY;
   });
 "
-  class="isolate -z-10 md:mb-52"
+  class="isolate -z-10 bg-[url(/hero/decoration.png)] bg-cover bg-center md:mb-52"
 >
   <div class="relative -z-20 bg-cover bg-center pb-10 pt-32 md:pb-0 md:pt-0">
     <div class="container relative mx-auto">
@@ -24,10 +24,16 @@ import HeroCard from "@components/cards/hero-card.astro";
               class="flex items-center space-x-10 *:z-50 rtl:space-x-reverse"
             >
               <a href="/" class="">
-                <img
+                <!-- <img
                   draggable="false"
                   src="/logo/logo.png"
                   class="h-[1.7rem] md:h-[2.4rem]"
+                  alt="Logo"
+                /> -->
+                <img
+                  draggable="false"
+                  src="/logo/logotipo.png"
+                  class="h-[2.5rem] md:h-[3.5rem]"
                   alt="Logo"
                 />
               </a>
@@ -286,29 +292,43 @@ import HeroCard from "@components/cards/hero-card.astro";
         </header>
       </div>
       <div class="flex items-center justify-center">
-        <div class="relative w-full px-4 pb-10 md:pb-56 lg:w-[50%]">
+        <div class="relative w-full pb-10 pl-4 md:pb-56 lg:w-[50%]">
           <div class="hero-content space-y-5">
             <h6
               class="subtitle flex items-center gap-3 text-primary lg:justify-start"
             >
               Comentarios para inspirarse
             </h6>
-            <h1 class="large-title">Agencia Digital Creativa</h1>
+            <div>
+              <div class="relative flex items-center gap-4 lg:gap-7">
+                <h1 class="large-title mb-0">HOLA SOY</h1>
+                <img
+                  src="/decoration/hand.png"
+                  alt="hand"
+                  class="h-10 lg:h-14"
+                />
+                <img
+                  src="/decoration/arrow-right.png"
+                  alt="arrow"
+                  class="absolute end-0 top-0 hidden -translate-y-1/2 scale-90 lg:block"
+                />
+              </div>
+              <h1 class="large-title pt-1 lg:pt-4">DANIEL SAURAS</h1>
+            </div>
             <p>
-              Creemos que un gran diseño no debe estar fuera de nuestro alcance,
-              nuestros servicios cuestan menos de la mitad del precio de un
-              diseñador a tiempo completo.
+              Me concentro en crear experiencias digitales que sean fáciles de
+              usar, agradables y que cumplan su función.
             </p>
             <BtnAnimated title="Empezar" />
           </div>
         </div>
-        <div class="hidden w-full px-4 pr-0 md:block lg:block lg:w-[50%]">
+        <div class="hidden w-full pr-0 md:block lg:block lg:w-[50%]">
           <div class="flex size-full lg:ml-auto lg:text-right">
             <div
               class="relative z-10 inline-flex size-full items-center pt-11 lg:pt-0"
             >
               <img
-                src="/hero/man.png"
+                src="/daniel-sauras/images-transparents/foto-7.png"
                 alt="hero"
                 class="w-full max-w-full origin-top-right scale-90 lg:ml-auto"
               />
@@ -320,19 +340,19 @@ import HeroCard from "@components/cards/hero-card.astro";
         class="bottom-0 left-0 z-10 mx-auto grid w-full gap-10 *:w-full md:absolute md:flex md:translate-y-1/2 md:*:w-1/3"
       >
         <HeroCard
-          title="Future Vision."
-          p="It is a long established fact that a reader will be distracted by thereadable content of a page."
+          title="Visión de futuro."
+          p="Es un hecho establecido desde hace mucho tiempo que un lector se distraerá con el contenido legible de una página."
           ><span class="icon-[bxs--bar-chart-square]"></span></HeroCard
         >
         <HeroCard
-          title="Product Desing."
-          p="There are many variations of passages of available, but the majority alteration in some form."
+          title="Diseño de producto."
+          p="Hay muchas variaciones de pasajes disponibles, pero la mayoría alteran de alguna forma."
           ><span class="icon-[material-symbols--rocket-launch-rounded]"
           ></span></HeroCard
         >
         <HeroCard
-          title="Inovative Solutions."
-          p="The generated Lorem Ipsum is therefore always free from repetition, injected humour."
+          title="Soluciones innovadoras."
+          p="El Lorem Ipsum generado está siempre libre de repeticiones y de humor."
           ><span class="icon-[tabler--chart-pie-filled]"></span></HeroCard
         >
       </div>

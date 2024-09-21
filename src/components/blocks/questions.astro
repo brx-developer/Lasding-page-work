@@ -13,7 +13,7 @@ setActiveAccordion(id) {
 this.activeAccordion = (this.activeAccordion == id) ? '' : id
 }
 }"
-      class="relative mx-auto space-y-5 overflow-hidden rounded-md text-sm font-normal lg:w-1/2"
+      class="relative mx-auto w-full space-y-5 overflow-hidden rounded-md text-sm font-normal *:w-full lg:w-1/2"
     >
       <div
         x-data="{ id: $id('accordion') }"
@@ -94,9 +94,9 @@ this.activeAccordion = (this.activeAccordion == id) ? '' : id
         </div>
       </div>
     </div>
-    <div class="a grid h-[50rem] gap-5 md:flex md:h-[21rem] lg:w-1/2">
+    <div class="a grid h-[50rem] gap-5 md:flex md:h-96 lg:w-1/2">
       <div
-        class="h-full rounded-md bg-[url(questions/people.jpg)] bg-cover bg-center md:w-[60%]"
+        class="h-full rounded-md bg-[url(daniel-sauras/images-with-background/foto-5.jpeg)] bg-cover bg-center md:w-[60%]"
       >
       </div>
       <div class="flex flex-col items-center justify-center gap-5 md:w-[40%]">

@@ -21,7 +21,7 @@
 
     &:before {
       content: "//";
-      @apply size-6 leading-none text-secondary;
+      @apply text-secondary size-6 leading-none;
     }
   }
 
@@ -34,7 +34,7 @@
   }
 
   .gradient {
-    @apply bg-gradient-to-r from-primary-accent to-primary;
+    @apply from-primary-accent to-primary bg-gradient-to-r;
   }
 
   .list {
@@ -45,15 +45,15 @@
 
       &:before {
         content: "";
-        @apply icon-[lets-icons--check-fill] mr-1.5 size-6 text-primary;
+        @apply text-primary icon-[lets-icons--check-fill] mr-1.5 size-6;
       }
     }
   }
 
   .btn {
     @apply transition-all duration-300;
-    @apply bg-gradient-to-r from-primary-accent to-primary;
-    @apply relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md bg-primary px-4 py-3 text-base font-semibold text-white;
+    @apply from-primary to-primary-dark bg-gradient-to-r;
+    @apply bg-primary-dark relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md px-4 py-3 text-base font-semibold text-white;
 
     &:hover {
       @apply bg-gradient-to-l;
