@@ -2,17 +2,19 @@
 import BtnAnimated from "@components/buttons/btn-animated.astro";
 ---
 
-<div class="bg-gray-100 pt-32">
-  <footer class="bg-secondary-dark">
+<div class="bg-gray-100 lg:pt-32">
+  <footer
+    class="relative flex flex-col justify-center bg-secondary-dark lg:flex-row"
+  >
     <div
-      class="mx-auto flex w-full max-w-5xl -translate-y-1/2 justify-center gap-20 rounded-xl bg-white p-10"
+      class="z-10 mx-auto flex w-full max-w-5xl flex-col justify-center gap-x-20 rounded-xl bg-white p-10 sm:flex-row lg:absolute lg:-translate-y-1/2"
     >
       <div>
-        <h2 class="subtitle text-3xl">Our Newsletter</h2>
+        <h2 class="subtitle text-xl lg:text-3xl">Our Newsletter</h2>
         <p>Subscribe now, get the latest and update news</p>
       </div>
       <form
-        class="md:shadow-[0px 15px 30px -4px rgba(16, 24, 40, 0.03)] relative my-2 flex h-auto max-w-lg flex-1 flex-col items-center justify-center gap-2 gap-y-4 rounded-full transition-all duration-500 focus-within:border-secondary md:h-16 md:flex-row"
+        class="md:shadow-[0px 15px 30px -4px rgba(16, 24, 40, 0.03)] relative my-2 flex h-auto max-w-lg flex-1 items-center justify-center gap-2 gap-y-4 rounded-full transition-all duration-500 focus-within:border-secondary md:h-16 md:flex-row"
       >
         <!-- Input -->
         <div class="relative flex w-full flex-1">
@@ -33,7 +35,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
         <BtnAnimated title="Get Started" />
       </form>
     </div>
-    <div class="container px-4">
+    <div class="container px-4 lg:pt-28">
       <div
         class="mb-16 grid -translate-y-4 grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:flex-row lg:gap-16 lg:pt-16"
       >

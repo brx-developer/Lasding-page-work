@@ -34,7 +34,7 @@
   }
 
   .gradient {
-    @apply bg-gradient-to-r from-secondary-light/60 to-primary;
+    @apply bg-gradient-to-r from-secondary-light/60 to-primary-dark;
   }
 
   .list {
