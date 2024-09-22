@@ -11,18 +11,21 @@ const { subtitle, title, parrafo } = Astro.props;
 <div
   class="relative rounded-lg bg-white p-10 shadow-[0_35px_60px_-25px_rgba(0,0,0,0.3)]"
 >
-  <p class="text-xl leading-10">
+  <p class="text-base leading-8">
     {parrafo}
   </p>
-  <h6 class="pt-3 font-semibold">{title}</h6>
-  <div class="flex items-center justify-between">
+
+  <div class="flex flex-col justify-between">
+    <h6 class="pt-3 font-semibold">{title}</h6>
     <h6 class="text-primary">{subtitle}</h6>
-    <img
-      src="testimonials/testimonials-1.png"
-      alt=""
-      draggable="false"
-      class="h-16 pb-5 pr-5"
-    />
+    <div class="absolute bottom-10 right-10">
+      <img
+        src="testimonials/testimonials-1.png"
+        alt=""
+        draggable="false"
+        class="h-10"
+      />
+    </div>
   </div>
   <div
     class="gradient absolute bottom-0 right-0 flex translate-y-7 rounded-lg bg-primary p-3 px-8"
