@@ -2,43 +2,68 @@
 import BtnAnimated from "@components/buttons/btn-animated.astro";
 ---
 
-<div class="relative">
-  <!-- <iframe
-    src="https://snazzymaps.com/embed/637395"
-    width="100%"
-    height="418px"
-    class="!border-2 !border-primary"
-    style="border:none; filter: brightness( 83% ) contrast( 73% ) saturate( 146% ) blur( 0px ) hue-rotate( 0deg );"
-  ></iframe> -->
-  <iframe
-    src="https://snazzymaps.com/embed/642656"
-    width="100%"
-    height="418px"
-    class="!border-2 !border-primary"
-    style="border:none; filter: brightness( 83% ) contrast( 73% ) saturate( 146% ) blur( 0px ) hue-rotate( 0deg );"
-  ></iframe>
+<div class="bg-gray-100 pt-32">
   <footer class="bg-secondary-dark">
+    <div
+      class="mx-auto flex w-full max-w-5xl -translate-y-1/2 justify-center gap-20 rounded-xl bg-white p-10"
+    >
+      <div>
+        <h2 class="subtitle text-3xl">Our Newsletter</h2>
+        <p>Subscribe now, get the latest and update news</p>
+      </div>
+      <form
+        class="md:shadow-[0px 15px 30px -4px rgba(16, 24, 40, 0.03)] relative my-2 flex h-auto max-w-lg flex-1 flex-col items-center justify-center gap-2 gap-y-4 rounded-full transition-all duration-500 focus-within:border-secondary md:h-16 md:flex-row"
+      >
+        <!-- Input -->
+        <div class="relative flex w-full flex-1">
+          <input
+            type="email"
+            id="hs-tac-input-email"
+            class="peer block w-full rounded-lg border border-secondary bg-gray-50 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
+            placeholder="Email"
+            required
+          />
+          <label
+            for="hs-tac-input-email"
+            class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
+            >Email</label
+          >
+        </div>
+        <!-- End Input -->
+        <BtnAnimated title="Get Started" />
+      </form>
+    </div>
     <div class="container px-4">
       <div
-        class="grid grid-cols-1 border-b border-secondary sm:grid-cols-2 lg:flex-row"
+        class="mb-16 grid -translate-y-4 grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:flex-row lg:gap-16 lg:pt-16"
       >
-        <div
-          class="flex w-full flex-col items-center justify-between gap-5 border-b border-secondary pb-[18px] pr-5 pt-12 sm:flex-row sm:border-b-0 sm:border-r sm:pb-9"
-        >
-          <div
-            class="mx-auto flex flex-col items-center gap-3 text-center sm:mx-0 sm:flex-row sm:text-left"
-          >
-            <div class="rounded-full border-2 border-secondary bg-white p-2">
-              <!-- class="flex size-6 items-center justify-center text-secondary-strong" -->
-              <span
-                class="gradient icon-[solar--phone-calling-bold] flex size-7 items-center justify-center text-primary"
-              ></span>
-            </div>
-            <div class="flex flex-col gap-0">
-              <h5 class="font-bold text-white">Llámanos</h5>
-              <p class="text-white">+12 123 456 7890</p>
+        <div class="col-span-full lg:col-span-2">
+          <!-- logo - start -->
+          <div class="flex pb-3">
+            <div class="mb-4 flex rounded-xl bg-gray-100 p-3 px-10 lg:-mt-2">
+              <a href="/" class="inline-flex items-center" aria-label="logo">
+                <!-- <img
+              src="/logo/logo.png"
+              alt="logo footer"
+              class="mx-auto h-14 md:h-full"
+            /> -->
+                <img
+                  draggable="false"
+                  src="/logo/logotipo.png"
+                  class="h-[2.5rem] md:h-[3.5rem]"
+                  alt="Logo"
+                />
+              </a>
             </div>
           </div>
+
+          <!-- logo - end -->
+
+          <p class="pb-8 text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+            reiciendis!
+          </p>
+
           <!-- social - start -->
           <div class="flex gap-6">
             <div
@@ -71,89 +96,6 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
             </div>
           </div>
           <!-- social - end -->
-        </div>
-
-        <form
-          class="md:shadow-[0px 15px 30px -4px rgba(16, 24, 40, 0.03)] relative flex h-auto max-w-lg flex-1 flex-col items-center justify-center gap-2 gap-y-4 rounded-full pb-9 pl-5 pt-[18px] transition-all duration-500 focus-within:border-secondary sm:pt-20 md:h-16 md:flex-row"
-        >
-          <!-- Input -->
-          <div class="relative flex w-full flex-1">
-            <input
-              type="email"
-              id="hs-tac-input-email"
-              class="peer block w-full rounded-lg border border-secondary bg-gray-100 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
-              placeholder="Correo electrónico
-"
-              required
-            />
-            <label
-              for="hs-tac-input-email"
-              class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
-              >Correo electrónico
-            </label>
-          </div>
-          <!-- End Input -->
-          <BtnAnimated title="Empezar" />
-        </form>
-      </div>
-
-      <div
-        class="mb-16 grid -translate-y-4 grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:flex-row lg:gap-16 lg:pt-16"
-      >
-        <div class="col-span-full lg:col-span-2">
-          <!-- logo - start -->
-          <div class="flex">
-            <div class="mb-4 flex rounded-xl bg-gray-100 p-3 px-10 lg:-mt-2">
-              <a href="/" class="inline-flex items-center" aria-label="logo">
-                <!-- <img
-                  src="/logo/logo.png"
-                  alt="logo footer"
-                  class="mx-auto h-14 md:h-full"
-                /> -->
-                <img
-                  draggable="false"
-                  src="/logo/logotipo.png"
-                  class="h-[2.5rem] md:h-[3.5rem]"
-                  alt="Logo"
-                />
-              </a>
-            </div>
-          </div>
-
-          <!-- logo - end -->
-
-          <p class="pb-3 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-            reiciendis!
-          </p>
-
-          <div class="flex flex-col gap-3 text-white">
-            <div class="flex items-center gap-2.5">
-              <div class="gradient rounded-full p-1">
-                <span
-                  class="icon-[ion--location-sharp] flex size-5 items-center justify-center"
-                ></span>
-              </div>
-              <p>451 Wall Street, UK, London</p>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="gradient rounded-full p-1">
-                <span
-                  class="icon-[ic--baseline-phone-iphone] flex size-5 items-center justify-center"
-                ></span>
-              </div>
-
-              <p>Teléfono: (064) 332-1233</p>
-            </div>
-            <div class="flex items-center gap-2">
-              <div class="gradient rounded-full p-1">
-                <span
-                  class="icon-[ic--round-email] flex size-5 items-center justify-center"
-                ></span>
-              </div>
-              <p>Email: info@camihame.com</p>
-            </div>
-          </div>
         </div>
 
         <!-- nav - start -->
@@ -323,10 +265,12 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
         <!-- nav - end -->
       </div>
 
-      <div
-        class="border-t border-secondary py-10 pb-6 text-center text-sm text-white hover:text-gray-100"
-      >
-        © 2024 - Present Marketing point. All rights reserved.
+      <div class="flex w-full justify-center border-t border-secondary py-10">
+        <div
+          class="flex cursor-pointer justify-center text-center text-sm text-gray-100 hover:text-white"
+        >
+          © 2024 - Present Marketing point. All rights reserved.
+        </div>
       </div>
     </div>
   </footer>

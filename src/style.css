@@ -17,11 +17,11 @@
   }
 
   .subtitle {
-    @apply mb-3 flex items-center text-base font-semibold leading-normal text-gray-700 sm:text-lg md:text-xl lg:text-2xl;
+    @apply mb-3 flex items-center gap-2 text-base font-semibold leading-normal text-gray-700 sm:text-lg md:text-xl lg:text-2xl;
 
     &:before {
       content: "//";
-      @apply text-secondary size-6 leading-none;
+      @apply leading-none text-secondary;
     }
   }
 
@@ -34,7 +34,7 @@
   }
 
   .gradient {
-    @apply from-secondary-light/60 to-primary bg-gradient-to-r;
+    @apply bg-gradient-to-r from-secondary-light/60 to-primary;
   }
 
   .list {
@@ -45,15 +45,15 @@
 
       &:before {
         content: "";
-        @apply text-primary icon-[lets-icons--check-fill] mr-1.5 size-6;
+        @apply icon-[lets-icons--check-fill] mr-1.5 size-6 text-primary;
       }
     }
   }
 
   .btn {
     @apply transition-all duration-300;
-    @apply from-primary to-secondary-light/60 bg-gradient-to-r;
-    @apply bg-primary relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md px-4 py-3 text-base font-semibold text-white;
+    @apply bg-gradient-to-r from-primary to-secondary-light/60;
+    @apply relative flex min-h-14 cursor-pointer items-center overflow-hidden rounded-md bg-primary px-4 py-3 text-base font-semibold text-white;
 
     &:hover {
       @apply bg-gradient-to-l;
