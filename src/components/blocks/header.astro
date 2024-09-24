@@ -10,7 +10,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
     });
   "
   :class="{ 'shadow-md  lg:!bg-opacity-90 lg:-translate-y-0 opacity-100': scrollPos > 150  ,' !bg-opacity-100  lg:-translate-y-full lg:opacity-0': scrollPos < 150 }"
-  class="duration fixed z-[99] mb-10 w-full -translate-y-0 !bg-white duration-300 lg:-translate-y-full lg:opacity-0 lg:backdrop-blur-sm"
+  class="duration fixed z-50 mb-10 w-full -translate-y-0 !bg-white duration-300 lg:-translate-y-full lg:opacity-0 lg:backdrop-blur-sm"
 >
   <div
     class="duration container flex flex-wrap items-center justify-between p-4 *:z-50"
@@ -41,16 +41,10 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
         </div>
       </button>
       <a href="/" class="">
-        <!-- <img
-          draggable="false"
-          src="/logo/logo.png"
-          class="h-[1.9rem] lg:h-[2.7rem]"
-          alt="Logo"
-        /> -->
         <img
           draggable="false"
           src="/logo/logotipo.png"
-          class="h-[2.5rem] lg:h-[3.5rem]"
+          class="h-10 md:h-14"
           alt="Logo"
         />
       </a>
@@ -137,7 +131,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
               @click.outside="isOpen = false, openedWithKeyboard = false"
               @keydown.down.prevent="$focus.wrap().next()"
               @keydown.up.prevent="$focus.wrap().previous()"
-              class="left-0 top-11 z-10 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 py-1.5 shadow-md lg:absolute lg:bg-white lg:bg-opacity-95 lg:backdrop-blur-sm"
+              class="left-0 top-11 z-10 ml-3 flex w-full min-w-48 flex-col rounded-xl bg-gray-200 py-1.5 shadow-md lg:absolute lg:bg-white lg:bg-opacity-95 lg:backdrop-blur-sm"
               role="menu"
             >
               <a
@@ -211,7 +205,7 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
                   @click.outside="isOpen = false, openedWithKeyboard = false"
                   @keydown.down.prevent="$focus.wrap().next()"
                   @keydown.up.prevent="$focus.wrap().previous()"
-                  class="left-0 top-7 z-20 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 bg-opacity-100 py-1.5 shadow-md lg:absolute lg:left-full lg:top-0 lg:ml-1 lg:bg-white lg:bg-opacity-95 lg:backdrop-blur-sm"
+                  class="left-0 top-7 z-20 ml-3 flex w-full min-w-48 flex-col rounded-xl bg-gray-200 bg-opacity-100 py-1.5 shadow-md lg:absolute lg:left-full lg:top-0 lg:ml-1 lg:bg-white lg:bg-opacity-95 lg:backdrop-blur-sm"
                   role="menu"
                 >
                   <a

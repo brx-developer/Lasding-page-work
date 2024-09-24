@@ -11,7 +11,8 @@ import HeroCard from "@components/cards/hero-card.astro";
       scrollPos = window.scrollY;
   });
 "
-  class="isolate -z-10 bg-[url(/hero/decoration.png)] bg-cover bg-center md:mb-52"
+  class="isolate -z-10 bg-cover bg-center md:mb-52"
+  style="background-image: url(/hero/decoration.png);"
 >
   <div class="relative -z-20 bg-cover bg-center pb-10 pt-32 md:pb-0 md:pt-0">
     <div class="container relative mx-auto">
@@ -24,16 +25,10 @@ import HeroCard from "@components/cards/hero-card.astro";
               class="flex items-center space-x-10 *:z-50 rtl:space-x-reverse"
             >
               <a href="/" class="">
-                <!-- <img
-                  draggable="false"
-                  src="/logo/logo.png"
-                  class="h-[1.7rem] md:h-[2.4rem]"
-                  alt="Logo"
-                /> -->
                 <img
                   draggable="false"
                   src="/logo/logotipo.png"
-                  class="h-[2.5rem] md:h-[3.5rem]"
+                  class="h-10 md:h-14"
                   alt="Logo"
                 />
               </a>
@@ -114,7 +109,7 @@ import HeroCard from "@components/cards/hero-card.astro";
                       @click.outside="isOpen = false, openedWithKeyboard = false"
                       @keydown.down.prevent="$focus.wrap().next()"
                       @keydown.up.prevent="$focus.wrap().previous()"
-                      class="left-0 top-11 z-10 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 py-1.5 shadow-md md:absolute md:bg-white md:bg-opacity-95 md:backdrop-blur-sm"
+                      class="left-0 top-11 z-10 ml-3 flex w-full min-w-48 flex-col rounded-xl bg-gray-200 py-1.5 shadow-md md:absolute md:bg-white md:bg-opacity-95 md:backdrop-blur-sm"
                       role="menu"
                     >
                       <a
@@ -188,7 +183,7 @@ import HeroCard from "@components/cards/hero-card.astro";
                           @click.outside="isOpen = false, openedWithKeyboard = false"
                           @keydown.down.prevent="$focus.wrap().next()"
                           @keydown.up.prevent="$focus.wrap().previous()"
-                          class="left-0 top-7 z-20 ml-3 flex w-full min-w-[12rem] flex-col rounded-xl bg-gray-200 bg-opacity-100 py-1.5 shadow-md md:absolute md:left-full md:top-0 md:ml-1 md:bg-white md:bg-opacity-95 md:backdrop-blur-sm"
+                          class="left-0 top-7 z-20 ml-3 flex w-full min-w-48 flex-col rounded-xl bg-gray-200 bg-opacity-100 py-1.5 shadow-md md:absolute md:left-full md:top-0 md:ml-1 md:bg-white md:bg-opacity-95 md:backdrop-blur-sm"
                           role="menu"
                         >
                           <a
@@ -292,7 +287,7 @@ import HeroCard from "@components/cards/hero-card.astro";
         </header>
       </div>
       <div class="flex items-center justify-center">
-        <div class="relative w-full pb-10 pl-4 md:pb-64 lg:w-[50%]">
+        <div class="relative w-full pb-10 pl-4 md:pb-64 lg:w-1/2">
           <div class="hero-content space-y-5">
             <h6
               class="subtitle flex items-center gap-3 text-primary lg:justify-start"
@@ -322,7 +317,7 @@ import HeroCard from "@components/cards/hero-card.astro";
             <BtnAnimated title="Empezar" />
           </div>
         </div>
-        <div class="hidden w-full pr-0 md:block lg:block lg:w-[50%]">
+        <div class="hidden w-full pr-0 md:block lg:block lg:w-1/2">
           <div class="flex size-full lg:ml-auto lg:text-right">
             <div
               class="relative z-10 inline-flex size-full items-center pt-11 lg:pt-0"

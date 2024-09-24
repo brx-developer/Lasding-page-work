@@ -2,57 +2,52 @@
 import BtnAnimated from "@components/buttons/btn-animated.astro";
 ---
 
-<div class="bg-gray-100 lg:pt-32">
+<div>
+  <iframe
+    src="https://snazzymaps.com/embed/642656"
+    width="100%"
+    height="418px"
+    class="!border-2 !border-primary"
+    style="border:none; filter: brightness( 83% ) contrast( 73% ) saturate( 146% ) blur( 0px ) hue-rotate( 0deg );"
+  ></iframe>
   <footer
-    class="relative flex flex-col justify-center bg-secondary-dark lg:flex-row"
+    class="relative border-t-4 border-primary bg-secondary-dark pt-4 sm:pt-10 lg:pt-12"
   >
+    <img
+      src="decoration/corner-points.png"
+      alt="esquinaPuntos"
+      class="absolute left-0 top-0 z-10 origin-top-left scale-125"
+    />
+    <img
+      src="decoration/corner-points.png"
+      alt="esquinaPuntos"
+      class="absolute right-0 top-0 z-10 origin-top-left translate-x-full rotate-90 scale-125"
+    />
     <div
-      class="z-10 mx-auto flex w-full max-w-5xl flex-col justify-center gap-x-20 rounded-xl bg-white p-10 sm:flex-row lg:absolute lg:-translate-y-1/2"
+      class="absolute left-0 top-0 h-full w-1/2 !bg-gradient-to-br !from-secondary !to-secondary-dark to-60%"
     >
-      <div>
-        <h2 class="subtitle text-xl lg:text-3xl">Our Newsletter</h2>
-        <p>Subscribe now, get the latest and update news</p>
-      </div>
-      <form
-        class="md:shadow-[0px 15px 30px -4px rgba(16, 24, 40, 0.03)] relative my-2 flex h-auto max-w-lg flex-1 items-center justify-center gap-2 gap-y-4 rounded-full transition-all duration-500 focus-within:border-secondary md:h-16 md:flex-row"
-      >
-        <!-- Input -->
-        <div class="relative flex w-full flex-1">
-          <input
-            type="email"
-            id="hs-tac-input-email"
-            class="peer block w-full rounded-lg border border-secondary bg-gray-50 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
-            placeholder="Email"
-            required
-          />
-          <label
-            for="hs-tac-input-email"
-            class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
-            >Email</label
-          >
-        </div>
-        <!-- End Input -->
-        <BtnAnimated title="Get Started" />
-      </form>
     </div>
-    <div class="container px-4 lg:pt-28">
+    <div
+      class="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-bl !from-secondary !to-secondary-dark to-60%"
+    >
+    </div>
+    <div class="container z-10 px-4 md:px-8">
       <div
-        class="mb-16 grid -translate-y-4 grid-cols-2 divide-x-2 divide-secondary pt-10 *:pl-10 md:grid-cols-4 lg:grid-cols-6 lg:flex-row lg:pt-16"
+        class="flex flex-col justify-between gap-12 pt-10 lg:flex-row lg:gap-20 lg:pt-12"
       >
-        <div class="col-span-full !pl-0 pr-5 lg:col-span-2">
+        <div
+          class="col-span-full mx-auto w-full max-w-xl text-center lg:col-span-2 lg:max-w-64 lg:text-left"
+        >
           <!-- logo - start -->
-          <div class="flex pb-3">
-            <div class="mb-4 flex rounded-xl bg-gray-100 p-3 px-10 lg:-mt-2">
+          <div class="z-20 flex justify-center lg:justify-start">
+            <div
+              class="z-20 mb-4 flex rounded-xl bg-gray-100 p-3 px-8 lg:-mt-2"
+            >
               <a href="/" class="inline-flex items-center" aria-label="logo">
-                <!-- <img
-              src="/logo/logo.png"
-              alt="logo footer"
-              class="mx-auto h-14 md:h-full"
-            /> -->
                 <img
                   draggable="false"
                   src="/logo/logotipo.png"
-                  class="h-[2.5rem] md:h-[3.5rem]"
+                  class="h-10 md:h-14"
                   alt="Logo"
                 />
               </a>
@@ -60,14 +55,14 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
           </div>
 
           <!-- logo - end -->
-
-          <p class="pb-8 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-            reiciendis!
+          <div class="gradient"></div>
+          <p class="aspect-w-1 mb-6 text-gray-100 sm:pr-8">
+            El texto de relleno es texto ficticio que no tiene significado pero
+            que parece muy similar al texto real.
           </p>
 
           <!-- social - start -->
-          <div class="flex gap-6">
+          <div class="z-20 flex gap-6 *:z-20">
             <div
               class="duration gradient flex items-center rounded-md bg-primary p-2 duration-100 hover:scale-110 hover:bg-gradient-to-l"
             >
@@ -100,178 +95,129 @@ import BtnAnimated from "@components/buttons/btn-animated.astro";
           <!-- social - end -->
         </div>
 
-        <!-- nav - start -->
-        <div>
-          <div class="mb-4 font-bold uppercase tracking-widest text-primary">
-            Products
+        <div class="z-20 flex-1 lg:-mt-52">
+          <div
+            class="flex flex-col gap-10 rounded-xl border-t-4 border-primary bg-white p-14 shadow-md"
+          >
+            <div class="flex flex-col gap-4 text-center">
+              <h2 class="title">Suscríbete ahora</h2>
+              <p class="">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis,pulvinar dapibus leo.
+              </p>
+            </div>
+            <form>
+              <div class="space-y-5">
+                <!-- Input -->
+                <div class="relative">
+                  <input
+                    type="text"
+                    id="hs-tac-input-name"
+                    class="peer block w-full rounded-lg border border-secondary bg-gray-100 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <label
+                    for="hs-tac-input-name"
+                    class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
+                    >Nombre</label
+                  >
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="relative">
+                  <input
+                    type="email"
+                    id="hs-tac-input-email"
+                    class="peer block w-full rounded-lg border border-secondary bg-gray-100 p-4 text-sm placeholder:text-transparent autofill:pb-2 autofill:pt-6 focus:border-primary focus:pb-2 focus:pt-6 focus:outline-none focus:ring-0 disabled:pointer-events-none disabled:opacity-50 [&:not(:placeholder-shown)]:pb-2 [&:not(:placeholder-shown)]:pt-6"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                  <label
+                    for="hs-tac-input-email"
+                    class="peer-focus: peer-[:not(:placeholder-shown)]: pointer-events-none absolute start-0 top-0 h-full truncate border border-transparent p-4 text-sm transition duration-100 ease-in-out peer-focus:-translate-y-1.5 peer-focus:text-xs peer-disabled:pointer-events-none peer-disabled:opacity-50 peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-xs"
+                    >Correo electrónico</label
+                  >
+                </div>
+                <!-- End Input -->
+              </div>
+
+              <div class="mt-2">
+                <p class="text-secondary-soft0 text-xs">
+                  Todos los campos son obligatorios
+                </p>
+
+                <p class="mt-5">
+                  <BtnAnimated
+                    title="Suscríbete ahora"
+                    addClass=" mx-auto !py-8 text-lg *:-mb-1  *:duration *:hover:mb-1"
+                  />
+                </p>
+              </div>
+            </form>
           </div>
-
-          <nav class="flex flex-col gap-4">
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Overview</a
-              >
+          <div class="flex justify-center">
+            <div
+              class="duration hidden cursor-pointer py-8 text-center text-sm text-gray-100 hover:text-white lg:block"
+            >
+              Copyright © 2024 - Present Marketing point. All rights reserved.
             </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Solutions</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Pricing</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Customers</a
-              >
-            </div>
-          </nav>
-        </div>
-        <!-- nav - end -->
-
-        <!-- nav - start -->
-        <div>
-          <div class="mb-4 font-bold uppercase tracking-widest text-primary">
-            COMPAÑÍA
           </div>
-
-          <nav class="flex flex-col gap-4">
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Acerca de</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Relaciones con inversores</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Empleos</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Prensa</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white">Blog</a
-              >
-            </div>
-          </nav>
         </div>
-        <!-- nav - end -->
-        <!-- nav - start -->
-        <div>
-          <div class="mb-4 font-bold uppercase tracking-widest text-primary">
-            APOYO
+
+        <div class="relative flex flex-col gap-5">
+          <div
+            class="flex flex-col justify-center gap-10 sm:flex-row lg:flex-col"
+          >
+            <div
+              class="flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left"
+            >
+              <div class="gradient rounded-lg bg-primary p-2">
+                <span
+                  class="icon-[solar--phone-calling-bold] flex size-8 items-center text-white"
+                >
+                </span>
+              </div>
+              <div class="flex flex-col gap-4 *:leading-3">
+                <h5 class="font-bold text-white">Teléfono</h5>
+                <p class="text-gray-100">+921234567890</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left"
+            >
+              <div class="gradient rounded-lg bg-primary p-2">
+                <span
+                  class="icon-[mdi--email-newsletter] flex size-8 items-center text-white"
+                >
+                </span>
+              </div>
+              <div class="flex flex-col gap-4 *:leading-3">
+                <h5 class="font-bold text-white">Email Us</h5>
+                <p class="text-gray-100">Ejemplo@dominio.com</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center gap-5 text-center sm:flex-row sm:text-left"
+            >
+              <div class="gradient rounded-lg bg-primary p-2">
+                <span
+                  class="icon-[mdi--address-marker] flex size-8 items-center text-white"
+                >
+                </span>
+              </div>
+              <div class="flex flex-col gap-4 *:leading-3">
+                <h5 class="font-bold text-white">Dirección</h5>
+                <p class="text-gray-100">DHA Fase 21 Tienda 23</p>
+              </div>
+            </div>
           </div>
-
-          <nav class="flex flex-col gap-4">
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Contacto</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Documentación</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Charlar</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Preguntas frecuentes</a
-              >
-            </div>
-          </nav>
-        </div>
-        <!-- nav - end -->
-
-        <!-- nav - start -->
-        <div>
-          <div class="mb-4 font-bold uppercase tracking-widest text-primary">
-            Legal
+          <div
+            class="block py-8 text-center text-sm text-gray-100/60 hover:text-gray-100 lg:hidden"
+          >
+            Copyright © 2024 - Present Marketing point. All rights reserved.
           </div>
-
-          <nav class="flex flex-col gap-4">
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Condiciones de servicio</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >política de privacidad</a
-              >
-            </div>
-
-            <div>
-              <a
-                href="#"
-                class="a text-[15px] text-gray-100/90 hover:text-white"
-                >Configuración de cookies</a
-              >
-            </div>
-          </nav>
-        </div>
-        <!-- nav - end -->
-      </div>
-
-      <div class="flex w-full justify-center border-t border-secondary py-10">
-        <div
-          class="flex cursor-pointer justify-center text-center text-sm text-gray-100 hover:text-white"
-        >
-          © 2024 - Present Marketing point. All rights reserved.
         </div>
       </div>
     </div>

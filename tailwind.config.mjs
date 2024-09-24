@@ -19,6 +19,10 @@ export default {
       inter: ["Inter", ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      width: {
+        "9/20": "45%",
+        "11/20": "55%",
+      },
       translate: {
         4.5: "1.125rem",
       },
