@@ -11,13 +11,13 @@ const { subtitle, title, parrafo } = Astro.props;
 <div
   class="relative rounded-lg bg-white p-10 shadow-[0_35px_60px_-25px_rgba(0,0,0,0.3)]"
 >
-  <p class="text-base leading-8">
+  <p class="leading-8">
     {parrafo}
   </p>
 
   <div class="flex flex-col justify-between">
     <h6 class="pt-3 font-semibold">{title}</h6>
-    <h6 class="text-primary">{subtitle}</h6>
+    <p class="text-primary">{subtitle}</p>
     <div class="absolute bottom-10 right-10">
       <span
         class="gradient icon-[bxs--quote-right] size-14 from-secondary-light to-secondary-dark"
