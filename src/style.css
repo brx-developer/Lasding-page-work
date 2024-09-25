@@ -111,23 +111,3 @@
   color: #fff;
   background: #333333;
 }
-.custom-shape-divider-top-1726536218 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1726536218 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 78px;
-}
-
-.custom-shape-divider-top-1726536218 .shape-fill {
-  fill: #f3f4f6;
-}
